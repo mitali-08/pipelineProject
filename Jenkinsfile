@@ -16,9 +16,9 @@ pipeline {
 		    steps {
 			script {
 			 sh '''if [ $ENVIRONMENT = "QA" ];then
-	cp target/GRRAS1.war /home/mitali/Documents/devops/apache-tomcat-9.0.93/webapps
+	cp target/pipelineProject.war /home/mitali/Documents/devops/apache-tomcat-9.0.93/webapps
 elif  [ $ENVIRONMENT = "UAT" ];then
-         cp target/GRRAS1.war /home/mitali/Documents/devops/apache-tomcat-9.0.93/webapps
+         cp target/pipelineProject.war /home/mitali/Documents/devops/apache-tomcat-9.0.93/webapps
 echo "deployment has been done!"
 fi'''
 			
