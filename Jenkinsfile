@@ -9,7 +9,7 @@ pipeline{
                         git 'https://github.com/mitali-08/pipelineProject.git'
                         }
                 }
-                stage(compile and build){
+                stage(compileandbuild){
                         steps{
                         sh 'mvn install'
                         }
