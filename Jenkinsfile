@@ -20,7 +20,7 @@ pipeline{
                         }
                 }
         }
-		stage('Deployment'){
+		stage(Deployment){
 		    steps {
 			script {
 			 if ( "${env.ENVIRONMENT}" == 'QA' ){
