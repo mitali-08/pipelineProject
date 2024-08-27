@@ -19,7 +19,6 @@ pipeline{
                         sh 'cp target/pipelineProject.war /home/mitali/Documents/devops/apache-tomcat-9.0.93/webapps'
                         }
                 }
-        }
 		stage(Deployment){
 		    steps {
 			script {
@@ -35,5 +34,6 @@ pipeline{
 			fi
 			
 			}}}
+}
 }
 
